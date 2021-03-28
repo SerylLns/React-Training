@@ -1,0 +1,27 @@
+.sb-main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+  a{
+    font-size: 40px;
+    color: $black;
+  }
+  p{
+    color: $black;
+    font-weight: 400;
+    margin: 0 15px;
+    transform: rotateX(60deg);
+    perspective: 300px;
+    transition: 0.4s;
+    &:hover{
+      cursor: pointer;
+      transition: 0.4s;
+      transform: rotateX(0) scale(1.3);
+    }
+  }
+}

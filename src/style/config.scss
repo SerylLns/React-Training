@@ -1,0 +1,18 @@
+$color-1: #fafeff;
+$color-2: #00c1ec;
+$color-3: #e7f7fe;
+$color-4: rgb(141, 141, 141);
+$black: rgb(40, 40, 40);
+$red: rgb(253, 87, 87);
+body{
+  margin: 0;
+  padding: 0;
+  font-family:  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}

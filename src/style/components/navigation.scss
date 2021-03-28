@@ -1,0 +1,74 @@
+.navigation{
+  width: 20vw;
+  height: 30vh;
+  // font-weight: 800;
+  font-size: 19px;
+  // position: relative;
+  z-index: 2;
+  ul{
+    display: flex;
+    flex-direction: column;
+    li{
+      color: rgba($color: #282C34, $alpha: .7);
+      margin: 5px;
+      &:hover{
+        color: rgba($color: #282C34, $alpha: 1);
+      }
+    }
+  }
+  &::after{
+    background-color:rgba($color: aquamarine, $alpha: .3) ;
+    width: 20vw;
+    height: 32vh;
+    border-bottom-right-radius: 50% ;
+    border-bottom-left-radius: 50% ;
+    border-top-right-radius: 50% ;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    content: "";
+    animation: navAnim 20s infinite alternate;
+  }
+}
+@keyframes navAnim {
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+.nav-active{
+  color: rgba($color: #1438, $alpha: 1);
+}
+.nav-portfolio{
+  cursor: pointer;
+  position: relative;
+  &:hover .nav-projects li{
+    transition: 0.5s;
+    transform: rotateY(0deg);    
+    a:hover{
+      color: rgba($color: #1438, $alpha: 1);
+    }
+  }
+}
+.nav-projects li{
+    left: 45%;
+    transition: 0.5s;
+    transform:rotateY(90deg);
+    position: absolute;
+    a{
+      color: rgba($color: #1438, $alpha: 0.6);
+    }
+  }
+.nav-projects li:nth-child(1){
+    top: -25px;
+}
+.nav-projects li:nth-child(2){
+    top: 0px;
+}
+.nav-projects li:nth-child(3){
+    top: 25px;
+}
